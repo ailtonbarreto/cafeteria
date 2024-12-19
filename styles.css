@@ -4,7 +4,7 @@
     --black: #1f1818;
     --bg: #010103;
     --border: 0.1rem solid rgba(255,255,255,0.3);
-    --font-size: 10px;
+    --font-size: 10vw;
     --text-size: 1.3vw;
     font-family: "Roboto", sans-serif;
 }
@@ -23,12 +23,16 @@
 
 body{
     background-color: var(--bg);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
-
 
 header{
     position: fixed;
+    margin-bottom: 30vw;
+}
+
+.header{
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -40,13 +44,15 @@ header{
     align-items: center;
     padding: 0.5vw 15vw;
     justify-content: space-between;
-    
 }
 
+
+
 section{
-    padding: 3rem 2rem;
+    padding: 7vw 15vw;
     margin: auto;
-    max-width: 1200px;
+    max-width: 100%;
+    align-items: center;
 }
 
 
@@ -94,7 +100,7 @@ section{
 }
 
 .home-container{
-    background: url("./img/home-img.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('./img/home-img.jpeg');
     background-position: center;
     background-size: cover;
 }
@@ -106,6 +112,10 @@ section{
 
 }
 
+#home .content h3{
+    line-height: 3vw;
+}
+
 .content{
     max-width: 60rem;
 }
@@ -113,6 +123,7 @@ section{
 .content h3{
     color: #fff;
     font-size: 2vw;
+    line-height: 2.5vw;
 }
 
 .content p{
@@ -128,7 +139,7 @@ section{
     font-size: 2vw;
     color: var(--main-color);
     text-align: center;
-    margin-bottom: 0.9vw;
+    margin-bottom: 4vw;
     text-transform: uppercase;
 }
 
@@ -148,6 +159,14 @@ section{
     padding: 2rem;
 }
 
+.home-container .content p{
+    font-size: var(--text-size);
+    color: #fff;
+    line-height: 2.5vw;
+    text-align: justify;
+}
+
+
 .about .row .content h3{
     font-size: var(--text-size);
     color: #fff;
@@ -156,13 +175,14 @@ section{
 .about .row .content p{
     font-size: var(--text-size);
     color: #fff;
-
+    line-height: 2.5vw;
+    text-align: justify;
 }
 
 .menu .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(15vw,1fr));
-    gap: 0.3vw;
+    grid-template-columns: repeat(auto-fit,minmax(20vw,1fr));
+    gap: 1vw;
 }
 
 .menu .box-container .box{
@@ -201,7 +221,7 @@ section{
 .review .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(15vw,1fr));
-    gap: 0.3vw;
+    gap: 1vw;
 }
 
 .review .box-container .box{
@@ -225,6 +245,7 @@ section{
 .review .box-container .box h3{
     color: #fff;
     padding: 0.9vw 0;
+    font-size: 1vw;
 }
 
 .address{
@@ -233,3 +254,4 @@ section{
     align-items: center;
 
 }
+
