@@ -50,7 +50,6 @@ header{
 }
 
 
-
 section{
     padding: 7vw 15vw;
     margin: auto;
@@ -66,12 +65,14 @@ section{
 }
 
 .cart{
-    width: 1.2vw;
+    width: 1.4vw;
+    height: 1.4vw;
     cursor: pointer;
 }
 
-.search{
-    width: 1.2vw;
+.wts{
+    width: 1.5vw;
+    height: 1.5vw;
     cursor: pointer;
 }
 
