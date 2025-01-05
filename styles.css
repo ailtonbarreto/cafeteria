@@ -23,7 +23,6 @@
 
 body{
     background-color: var(--bg);
-    /* overflow-x: hidden; */
 }
 
 header{
@@ -45,8 +44,6 @@ header{
     padding: 0.5vw 15vw;
     justify-content: space-between;
 }
-
-
 
 section{
     padding: 7vw 15vw;
