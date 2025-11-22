@@ -289,16 +289,14 @@ iframe {
         margin-bottom: 10vw;
     }
 
-    /* HEADER */
-    header {
+
+    .header {
         position: fixed;
         width: 100%;
         z-index: 999;
-    }
-
-    .header {
         padding: 4vw 6vw;
     }
+
 
     .logo {
         width: 15vw;
@@ -347,6 +345,10 @@ iframe {
 
     .content {
         max-width: 100vw;
+
+        p{
+          font-weight: 500;  
+        }
     }
 
     #home .content {
